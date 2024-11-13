@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>비교연산자</title>
+</head>
+<body>
+    <script>
+        // 비교연산자
+
+        // 1. a > b (a가 b보다 크다)
+
+        // 1. a < b (a가 b보다 작다)
+
+        // 2. a >= b (a가 b보다 크거나 같다)
+
+        // 3. a <= b (a보다 b보다 작거나 같다)
+
+        // 4. a == b (a와 b는 같다) - 자료형(type)은 숫자형이든 문자형이든 상관하지 않고 표기된 숫자만 일치하면 true 를 반환한다. 즉 숫자 10이던 문자형 "10" 이던 같은것으로 인식되어 true를 반환한다.
+
+        // 5. a === b (a와 b는 같다) - 자료형(type)까지 검사해서 숫자형10 과 문자형"10" 이 다른것으로 인식되어 false 를 반환한다.
+
+        // 6. a != b (a와 b는 다르다) - 자료형이 문자형이든 숫자형이든 상관하지 않고 숫자 10과 문자 10이 같은것으로 인식되어 a != b 에 대해  false를 반환한다. (!는 결과값을 반대로 바꿔버려서 false를 반환하는것)
+
+        // 7. a !== b(a와 b는 다르다) - 숫자형 10과 문자형"10"을 비교할 때 숫자는 같지만 자료형인 타입이 다르기 때문에 아까 a != b와는 다르게 true를 반환한다. 
+
+        let a = 10;
+        let b = 20;
+        let c = "10";
+        let result;
+
+        result = a > b;
+        console.log(result);
+
+        result = a < b;
+        console.log(result);
+
+        result = a <= b;
+        console.log(result);
+
+        result = a >= b;
+        console.log(result);
+
+        result = a == b;
+        console.log(result);
+
+        result = a != b;
+        console.log(result);
+
+        result = a == c;
+        console.log(result);
+
+        result = a === c;
+        console.log(result);
+
+        result = a !== c;
+        console.log(result);
+
+    </script>
+</body>
+</html>

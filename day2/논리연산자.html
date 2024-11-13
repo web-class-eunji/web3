@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>논리연산자</title>
+</head>
+<body>
+    <script>
+        // 논리연산자이론
+        // ||(or) : 피연산자중 하나만 true 이면 true라는 결과값을 반환한다.
+        // &&(and) : 피연산자중 값이 하나라도 false가 존재하면 false를 반환한다.
+        // !(not) : 단항연산자로 값이 TRUE이면 반대로 FALSE를 반환한다.
+
+        let a = 10;
+        let b = 20;
+        let c = 30;
+        let d = 40;
+        let result;
+
+        // ||OR연산자
+        result = a > b || b >= c || c > d;
+        console.log(result);
+
+        result = a > b || b >= c || c <= d;
+        console.log(result);
+
+
+        //&&AND연산자
+        result = a <= b && b >= c && c <= d;
+        console.log(result);
+
+        result = a <= b && b <= c && c <= d;
+        console.log(result);
+
+        //!NOT연산자
+        result = !(a > b);
+        console.log(result);
+    </script>
+</body>
+</html>
