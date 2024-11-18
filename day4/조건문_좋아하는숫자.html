@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>좋아하는 숫자</title>
+</head>
+<body>
+    <script>
+        // 사용자가 좋아하는 값을 입력받아야함
+        // 사용자가 입력한 값이 짝수라면 당신이 좋아하는 숫자는 짝수이군요 출력
+        // 사용자가 입력한 값이 홀수라면 당신이 좋아하는 숫자는 홀수이군요 출력
+
+        let userLikeNumber = prompt("당신이 좋아하는 숫자를 입력해주세요.");
+
+        if(userLikeNumber % 2 == 0){
+            document.write("당신이 좋아하는 숫자는 짝수입니다");
+        } else {
+            document.write("당신이 좋아하는 숫자는 홀수입니다.");
+        }
+
+        // let result = userLikeNumber >= 10 ? "당신이 좋아하는 숫자는 2자리 수 이상이군요" : "당신이 좋아하는 숫자는 1자리수 이군요"
+
+        // document.write(result);
+    </script>
+</body>
+</html>

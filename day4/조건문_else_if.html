@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>else if</title>
+</head>
+<body>
+    <script>
+        // 가장 위에 있는 조건식부터 밑으로 내려오면서 차례대로 맞는 조건을 검사하면서 만족하는 값이 나오면 그에 해당하는 코드를 실행하고 조건문을 종료한다.
+        // 조건중에 만족하는 값이 (true)가 하나라도 없으면 마지막에 있는 else 코드를 실행한다.
+
+        let score = prompt("점수를 입력해주세요");
+
+        if(score >= 90){
+            document.write("A학점! 참 잘했어요");
+        } else if (score >= 80) {
+            document.write("B학점");
+        } else if (score >= 70){
+            document.write("C학점");
+        } else if (score >= 60){
+            document.write("D학점");
+        } else {
+            document.write("F학점으로 재시험 당첨!!!!!!");
+        }
+    </script>
+</body>
+</html>

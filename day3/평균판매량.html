@@ -12,6 +12,18 @@
         // 1분기 판매량 : 1200
         // 2분기 판매량 : 1300
         // 3분기 판매량 : 1400
+
+        let q = prompt("4분기 판매량은 얼마입니까?");
+        let msg1 = "판매량이 평균 이상입니다.";
+        let msg2 = "판매량이 평균 미달입니다.";
+
+        let avg = (1200 + 1300 + 1400) / 3;
+        console.log(avg);
+
+        let result = q >= avg ? msg1 : msg2;
+        document.write(result);
+
+
     </script>
 </body>
 </html>
