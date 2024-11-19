@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        if(조건식1){
+            if(조건식2){
+            자바스크립트 코드
+            } else {
+                조건식 2의 조건이 맞지 않을 때
+            }
+        } else {
+            조건1 이 맞지 않을 때
+        }
+        */
+
+        let userId = "ahdmswl";
+        let userPw = "112233";
+
+        let inputId = prompt("아이디를 입력해주세요.");
+        let inputPw = prompt("비밀번호를 입력해주세요.");
+
+        if(userId == inputId){
+            if(userPw == inputPw){
+                document.write(userId + "님 반갑습니다!");
+            } else {
+                alert("비밀번호가 일치하지 않습니다.");
+            }
+        }else {
+            alert("아이디가 일치하지 않습니다."); 
+        }
+    </script>
+</body>
+</html>
