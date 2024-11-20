@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>switch</title>
+</head>
+<body>
+    <script>
+        // 기본 작성법
+        /*
+        let 변수 = 초기값;
+
+        switch(변수){
+            case 값1 : 코드1;
+            break;
+            case 값2 : 코드2;
+            break;
+            case 값3 : 코드3;
+            break; 
+            case 값4 : 코드4;
+            break;
+            case 값5 : 코드5;
+            break;
+
+            default : 코드;
+        }
+        */
+
+        let site = prompt("네이버, 다음, 네이트, 구글 중 즐겨 사용하는 검색엔진은?");
+        let url;
+
+        switch(site){
+            case "네이버": url = "www.naver.com";
+            break;
+            case "다음": url = "www.daum.net";
+            break;
+            case "네이트": url = "www.nate.com";
+            break;
+            case "구글": url = "www.google.com";
+            break;
+
+            default: alert("보기중에 없는 사이트 입니다.");
+        }
+
+        if(url){
+            location.href = "http://" + url;
+        }
+    </script>
+</body>
+</html>

@@ -17,6 +17,27 @@
         7. 50000원 이상 구매했지만 회원이 아니라면 배송비 5000원 부과됨 출력
         8. 50000이하로 구매했다면 회원이던 아니던 50000원 미만 구매로 배송비 5000원 부과됨 
         */
+
+        let totalPrice = prompt("구매금액입력", "숫자만 입력해주세요");
+        let member = confirm("회원이신가요?"); 
+        console.log(member);
+
+        if(totalPrice >= 100000){
+            document.write("100,000원 이상 구매로 사은품이 제공됩니다!<br>");
+            if(member){
+                document.write("회원 50,000이상 구매 고객은 배송비 무료!");
+            } else {
+                document.write("비회원은 배송비 5,000원이 부과됩니다.<a href='#'>회원가입 하러가기</a>");
+            }
+        } else if (totalPrice >= 50000) {
+            if(member){
+                document.write("회원 50,000 구매 고객은 배송비 무료!");
+            } else {
+                document.write("비회원은 배송비 5,000이 부과됩니다.");
+            }
+        } else {
+            document.write("50,000 이하 구매 고객은 배송비 5,000원이 부과됩니다.")
+        }
     </script>
 </body>
 </html>
