@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>continue문</title>
+</head>
+<body>
+    <script>
+        /*
+        for(초기값;조건식;증감식;){
+            continue;
+            자바스크립트 코드;
+        }
+        ============================
+        let 변수 = 초기값;
+        while(조건식){
+            증감식;
+            continue;
+            자바스크립트코드;
+        }
+
+        continue의 역할
+        continue는 반복문의 현재 반복을 중단하고 다음 반복으로 바로 넘어간다.
+        즉 continue 아래의 코드는 실행되지 않는다.
+        */
+
+        for(let i = 0; i <= 10; i++){
+            if(i % 2 == 0){ // i가 짝수인지 확인
+                continue;//조건을 충족한다면 아래 코드를 건너뛰고 다음 반복으로 넘어감
+            }
+            document.write(i,"<br>");
+        }
+
+        let j = 0;
+        while(j <= 10){ // 0부터 10까지 반복
+            j++ // 값을 증가시킴
+            if(j % 2 != 0){ // j를 2로 나눈 나머지가 0이 아니라면 즉 홀수라면
+                continue; // 아래 코드를 건너뛰고 다음 반복으로 넘어가라
+            }
+            document.write(j,"<br>"); // 짝수일 경우에 실행되는 코드
+        }
+    </script>
+</body>
+</html>

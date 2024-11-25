@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>break문</title>
+</head>
+<body>
+    <script>
+        /*
+        for문 break 사용법
+        for(초기값;조건식;증감식){
+            break;
+            자바스크립트코드;
+        }
+
+        while문 break 사용법
+        let 변수 = 초기값;
+        while(조건식){
+            break; // 반복문을 강제로 종료
+            자바스크립트 코드;
+            증감식;
+        }
+        */
+
+        for(let i = 0; i <= 10; i++){
+            if(i == 6){
+                break;
+            }
+            document.write(i,"<br>");
+        }
+
+        let j = 0;
+        while(j <= 10){
+            if(j == 6){
+                break;
+            }
+            console.log(j);
+            j++
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>중첩for문</title>
+</head>
+<body>
+    <script>
+        /*
+        for(초기값;조건식;증감식){
+            for(초기값;조건식;증감식){
+                자바스크립트 코드;
+            }
+        }
+        */
+
+        for(let i = 1; i <= 3; i++){
+            // i는 1부터 시작해서 3까지 증가한다.
+            // i는 행을 나타낸다.
+            for(let j = 1; j <= 2; j++){
+                // j는 매번 바깥쪽 반복문(i가)이 실행될대마다 안쪽 반복문이 작동한다.
+                // J는 1부터 시작해서 2까지 증가한다.
+                // J는 열을 나타낸다.
+                document.write(`${i}행 ${j}열 <br>`);
+                // 현재 행과 열의 값을 출력한다.
+            }
+            document.write("<br>");
+        }
+    </script>
+</body>
+</html>
