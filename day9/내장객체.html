@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>내장객체</title>
+</head>
+<body>
+    <script>
+        // 참조변수 이름 = new 생성함수();
+
+        let tv = new Object();
+        tv.color = "white";
+        tv.price = 300000;
+        tv.show = function(){
+            document.write(`tv 색상 : ${this.color}<br>`);
+            document.write(`tv 가격 : ${this.price}`)
+        }
+        tv.show();
+
+        function sdfk(){
+            sdkfjsfjlasjlf
+        }
+
+    </script>
+</body>
+</html>

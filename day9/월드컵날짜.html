@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>월드컵날짜정보</title>
+</head>
+<body>
+    <script>
+        let worldcup = new Date("2002-05-31");
+        let worldcupMonth = worldcup.getMonth() +1,
+            worldcupDate = worldcup.getDate(),
+            worldcupDay = worldcup.getDay();
+
+        document.write("<h2>2002 월드컵 날짜 정보</h2>");
+        document.write(`2002년 월드컵 몇 월 : ${worldcupMonth}<br>`);
+        document.write(`2002년 월드컵 몇 일 : ${worldcupDate}<br>`);
+        document.write(`2002년 월드컵 무슨 요일 : ${worldcupDay}<br>`);
+
+    </script>
+</body>
+</html>
