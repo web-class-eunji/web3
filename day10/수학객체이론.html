@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>수학객체이론</title>
+</head>
+<body>
+    <script>
+        // 수학객체메서드
+
+        //Math.dffsjdflk()
+        /*
+        1. Math.max(숫자1,숫자2,숫자3,숫자4) : 숫자 중 가장 큰 값을 반환한다.(최대값)
+        2. Math.min(숫자1,숫자2,숫자3,숫자4) : 숫자 중 가장 작은 값을 반환한다.(최소값)
+        3. Math.abs(숫자) : 숫자의 절대값을 반환(절대값이란 숫자의 부호를 제거하여 항상 양수로 만드는것)
+        4. Math.round(숫자) : 소수점 첫째 자리에서 반올림하여 정수를 반환
+        5. Math.ceil(숫자) : 소수점 첫째 자리에서 무조건 올림하여 정수를 반환 
+        6. Math.floor(숫자) : 소수점 첫째 자리에서 무조건 내림하여 정수를 반환
+        7. Math.sqrt(숫자) : 숫자의 제곱근값을 반환 (어떤 수를 제곱했을 때 원래 숫자가 되는 수 ex : 2는 4의 제곱근 / 3은 9의 제곱근 2*2 4*4)
+        8. Math.random() :0 ~ 1 사이에 난수를 반환 
+        9. Math.pow(숫자, 제곱값) : 숫자의 거듭제곱값을 반환
+        10. Math.PI : 원주율 상수를 반환
+        */
+
+        let num = 2.1234;
+
+        let maxNum = Math.max(1,3,5,8);
+        console.log(maxNum);
+
+        let minNum = Math.min(1,3,5,8);
+        console.log(minNum);
+
+        let absNum = Math.abs(-10000);
+        console.log(absNum);
+
+        let roundNum = Math.round(num);
+        console.log(roundNum);
+
+        let ceilNum = Math.ceil(num);
+        console.log(ceilNum);
+
+        let floorNum = Math.floor(num);
+        console.log(floorNum);
+
+        let sqrtNum = Math.sqrt(16);
+        console.log(sqrtNum);
+
+        let randomNum = Math.random();
+        console.log(randomNum);
+
+        let powNum = Math.pow(2,8);
+        console.log(powNum);
+
+        let piNum = Math.PI;
+        console.log(piNum);
+
+        let randomNum2 = Math.floor(Math.random()*51) + 50;
+        console.log(randomNum2);
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>어린이날과어버이날</title>
+</head>
+<body>
+    <script>
+        // 어린이날 추출
+        // 어버이날 추출
+        // 어버이날 - 어린이날
+        // 어린이날과 어버이날은 0일 차이 납니다.
+
+        let childrensDay = new Date("2024-05-05");
+        let parentsDay = new Date("2024-05-08");
+
+        let theDay = parentsDay - childrensDay;
+        console.log(theDay);
+
+        let result = theDay/(1000 * 60 * 60 * 24);
+        document.write(`어린이날과 어버이날은 ${result}일 차이납니다.`)
+
+    </script>
+</body>
+</html>

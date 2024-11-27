@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dDay</title>
+</head>
+<body>
+    <script>
+        // 현재 날짜부터 특정 날짜까지 며칠이 남았는지 구하는 방식
+        // 현재날짜 , 특정날짜(연말)
+
+        // 1초 = 1,000
+        // 1분(60초) = 1,000 * 60
+        // 1시간(60분) = 1000 * 60 * 60
+        // 1일(1시간 * 24) = 1000 * 60 * 60 * 24
+
+        let today = new Date();
+        let nowYear = today.getFullYear();
+        let lastDay = new Date(nowYear,11,31);
+        let dDay = lastDay - today;
+
+        console.log(lastDay.getTime());
+        console.log(today.getTime());
+
+
+        let result = Math.ceil(dDay/(1000 * 60 * 60 * 24));
+
+        document.write(`연말 D-day : ${result}일 남았습니다.`);
+    </script>
+    <!-- 2,896,430,037 -->
+    <!-- 86,400,000 -->
+</body>
+</html>
