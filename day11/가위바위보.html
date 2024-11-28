@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가위바위보</title>
+</head>
+
+<body>
+    <script>
+        //사용자의 가위, 바위,보 값을 입력받는다.
+        // 랜덤숫자를 생성한다.
+        // 빈 데이터 공간을 하나 생성한다 ( 예시로는 ex라고 칭하겠음)
+        // 생성한 랜덤 숫자가 1과 같다면 ex에 "가위" 대입
+        // 생성한 랜덤 숫자가 2와 같다면 ex에 "바위" 대입
+        // 생성한 랜덤 숫자가 3과 같다면 ex에 "보" 대입
+        // 사용자의 입력값과 랜덤숫자가 같다면 비겼습니다! 컴퓨터도 (컴퓨터 랜덤값)을 냈습니다. 출력
+        // 사용자가 이겼다면 축하합니다! 사용자가 이겼습니다. (컴퓨터 : 컴퓨터랜덤값) 출력
+        // 사용자가 졌다면 아쉽습니다! 컴퓨터가 이겼습니다. (컴퓨터 : 컴퓨터랜덤값) 출력
+
+        let userChoice = prompt("가위, 바위, 보 중 택1");
+        let randomNum = Math.floor(Math.random() * 4);
+        let computerChoice;
+
+        // if (randomNum === 1) {
+        //     computerChoice = "가위";
+        // } else if (randomNum === 2) {
+        //     computerChoice = "바위";
+        // } else {
+        //     computerChoice = "보";
+        // }
+
+        switch(randomNum){
+            case 1 : computerChoice = "가위";
+            break;
+            case 2 : computerChoice = "바위";
+            break;
+            case 3 : computerChoice = "보";
+            break;
+
+            default: alert("잘못입력");
+        }
+
+        if (userChoice === computerChoice) {
+            document.write("비김 컴퓨터도 " + computerChoice + "를 냈습니다.");
+        } else if (
+            (userChoice === "가위" && computerChoice === "보") ||
+            (userChoice === "바위" && computerChoice === "가위") ||
+            (userChoice === "보" && computerChoice === "바위")
+        ) {
+            document.write(`축하축하 님이 이김 ( 컴퓨터 : ${computerChoice} )`);
+        } else {
+            document.write(`아숩아숩 컴터가 이김 (컴퓨터 : ${computerChoice})`);
+        }
+    </script>
+</body>
+
+</html>
