@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>과일문제</title>
+</head>
+<body>
+    <script>
+        // group1 에는 사과와 바나나 들어있음
+        // group2 에는 포도와 딸기 들어있음
+
+        let group1 = ["사과","바나나"];
+        let group2 = ["포도","딸기"];
+
+        //배열 합치기(concat)
+        // ["사과", "바나나", "포도", "딸기"]
+        let allgroup = group1.concat(group2);
+        console.log(allgroup);
+
+    
+        //배열 일부 추출
+        // ["바나나", "포도"];
+        let sliceFruits = allgroup.slice(1,3);
+        console.log(sliceFruits);
+
+        //특정 위치에 요소 삽입
+        // ["사과","바나나", "귤", "복숭아", "딸기"]
+        // ["사과", "바나나", "포도", "딸기"]
+        allgroup.splice(2,1,"귤","복숭아");
+        console.log(allgroup);
+
+        //사과삭제
+        allgroup.shift();
+        console.log(allgroup);
+
+        //삭제한 사과 자리에 망고 추가
+        allgroup.unshift("망고");
+        console.log(allgroup);
+
+        //오름차순
+        allgroup.sort();
+        console.log(allgroup);
+    </script>
+</body>
+</html>

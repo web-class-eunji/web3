@@ -19,15 +19,42 @@
         // let 참조변수 = new Array(값1, 값2, 값3);
         //=========================================
         // let 참조변수 = [값1, 값2, 값3];
+        //=========================================
+        // let 참조변수 = [
+        //      {name : "김연수", score :85},    
+        //      {name : "주수명", score :95},    
+        //      {name : "이재락", score :96},    
+        // ]
 
+        //방식1
         let arrData = new Array();
-        
         arrData[0] = "안녕하삼 오늘은 자바스크립트 수업";
         arrData[1] = 11;
         arrData[2] = "일차 입니다.";
-
         document.write(arrData + "<br>");
-        document.write(arrData[1]);
+        document.write(arrData[1] + "<br>");
+
+        //방식2
+        let arrData2 = new Array("오늘의 날씨는",1,"도 입니다.");
+        document.write(arrData2 + "<br>");
+
+        //방식3
+        let arrData3 = ["자바스크립트","재미있나요?"," 백점 만점에",80,"점"];
+        document.write(arrData3 + "<br>");
+
+        //방식4
+        let students = [
+            {name : "김연수", score :85},    
+            {name : "주수명", score :95},    
+            {name : "이재락", score :96}
+        ];
+        console.log(students);
+
+
+        //for문을 사용한 출력
+        for(let i = 0; i < arrData.length;i++){
+            document.write(arrData[i]);
+        }
     </script>
 </body>
 </html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배열객체메서드</title>
+</head>
+<body>
+    <script>
+        // 배열객체 메서드 종류
+        /*
+        1. join(연결문자) : 배열객체의 데이터를 연결문자 기준으로 1개의 문자형 데이터로 반환한다.
+        2. reverse() : 배열객체의 데이터 순서를 역순으로 바꾼 후 반환한다.
+        3. sort() : 배열객체의 데이터를 오름차순으로 정렬한다.
+        4. slice(index1,index2) : 배열객체의 데이터 중 원하는 인덱스 구간만큼 잘라서 배열객체로 가져온다.
+        5. splice(index1,index2) : 배열객체의 지정 데이터를 삭제하고 그 구간에 새로운 데이터를 삽입.
+        6. concat() : 2개의 배열 객체를 하나로 결합한다.
+        7. pop() : 배열에 저장된 데이터 중 마지막 인덱스에 저장된 데이터를 삭제한다.
+        8. push(new data) : 배열객체의 마지막 인덱스에 새 데이터를 삽입한다.
+        9. shift() : 배열객체의 저장된 데이터 중 첫번째 인덱스에 저장된 데이터를 삭제한다.
+        10. unshift(new data) : 배열객체의 가장 앞의 인덱스에 새 데이터를 삽입한다.
+        11. lenght : 배열에 저장된 총 개수를 반환한다 ( 메서드 아닌 속성 )  
+        */
+
+        let array1 = ["사당","교대","방배","강남"];
+        let array2 = ["신사","압구정","옥수"];
+
+        //join
+        let result = array1.join("*");
+        document.write(result + "<br>");
+
+        //reverse
+        result = array1.reverse();
+        document.write(result + "<br>");
+
+        //sort
+        result = array1.sort();
+        document.write(result + "<br>");
+
+        //slice
+        result = array1.slice(1,3);
+        document.write(result + "<br>");
+
+        //splice
+        console.log(result)
+        result = array1.splice(1,2); 
+        document.write(result + "<br>");
+        document.write(array1 + "<br>");
+
+        //concat
+        result = array1.concat(array2);
+        document.write(result + "<br>");
+
+        //pop
+        // console.log(array1)
+        result = array1.pop();
+        document.write(result + "<br>");
+
+        //push
+        result = array1.push("용산");
+        document.write(result + "<br>");
+        document.write(array1+ "<br>");
+
+        //shift
+        result = array1.shift();
+        document.write(result + "<br>");
+        document.write(array1+ "<br>");
+
+        //unshift
+        result = array1.unshift("잠실");
+        document.write(result + "<br>");
+        document.write(array1+ "<br>");
+
+        document.write(array2.length);
+    </script>
+</body>
+</html>
