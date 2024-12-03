@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문자열객체</title>
+</head>
+<body>
+    <script>
+        // 문자열객체 이론
+        // let 참조변수 = new String(문자형 데이터);
+        let text1 = new String("hello String");
+
+        let text2 = "Hello String2";
+
+        /*
+        문자열객체 메서드 종류
+
+        1. charAt(index) : 문자열에서 인덱스 번호에 해당하는 문자를 반환
+
+        2. indexOf("찾을 문자"):문자열에서 왼쪽부터 찾을 문자와 일치하는 문자를 찾아 가장 먼저 일치하는 문자의 인덱스 번호를 반환한다. (만약 찾는 문자가 없으면 -1을 반환)
+
+        3. lastIndexOf("찾을 문자") : 문자열에서 오른쪽부터 찾을 문자와 일치하는 문자를 찾아 가장 먼저 일치하는 문자의 인덱스 번호를 반환한다. (오른쪽에서 찾되, 문자의 시작 인덱스를 반환)
+
+        4. match("찾을 문자") : 문자열에서 왼쪽부터 찾을 문자와 일치하는 문자를 찾아 제일 먼저 찾은 문자를 반환한다. (찾는 문자가 없으면 null 을 반환)
+
+        5. replace("바꿀문자","새문자") : 문자열에서 왼쪽부터 바꿀 문자와 일치하는 문자를 찾아 제일 먼저 찾은 문자를 새 문자로 치환한다.
+
+        6. search("찾을문자") : 문자열에서 왼쪽부터 찾을 문자와 일치하는 문자를 찾아 제일 먼저 일치하는 인덱스 번호를 반환
+
+        7. slice(a,b) : a개의 문자를 자르고, b번째 이후에 문자를 자른 후 남는 문자를 반환한다.
+
+        8. substring(a,b) : a인덱스부터 b 인덱스 이전 구간의 문자를 반환한다.
+
+        9. substr("문자") : 문자열에 a인덱스부터 지정한 문자 개수만큼 문자열을 반환한다.
+
+        10. split("문자") : 지정한 문자를 기준으로 문자 데이터를 나누어 배열에 저장하여 반환한다.
+
+        11. toLowerCase() : 문자열에서 영문 대문자를 모두 소문자로 변경한다.
+        12. toUpperCase() : 문자열에서 영문 소문자를 모두 대문자로 변경한다.
+
+        13. length : 문자열에서 문자의 개수를 반환한다.
+
+        14. concat("새로운 문자") : 문자열에 새로운 문자열을 결합한다.
+
+        15. charCodeAt(index) : 아스키코드값에 해당하는 문자를 반환한다.
+
+        16. fromCharCode(아스키코드값) : 아스키코드값에 해당하는 문자를 반환한다.
+        */
+
+        let text = "Hello Thank you good luck to you";
+        document.write(text.charAt(16),"<br>");
+
+        document.write(text.indexOf("you"),"<br>");
+
+        document.write(text.indexOf("you",16),"<br>");
+
+        document.write(text.lastIndexOf("you"),"<br>");
+
+        document.write(text.lastIndexOf("you",25),"<br>");
+
+
+    </script>
+</body>
+</html>
