@@ -32,7 +32,7 @@
 
         8. substring(a,b) : a인덱스부터 b 인덱스 이전 구간의 문자를 반환한다.
 
-        9. substr("문자") : 문자열에 a인덱스부터 지정한 문자 개수만큼 문자열을 반환한다.
+        9. substr(a,b) : 문자열에 a인덱스부터 지정한 문자 개수만큼 문자열을 반환한다.
 
         10. split("문자") : 지정한 문자를 기준으로 문자 데이터를 나누어 배열에 저장하여 반환한다.
 
@@ -49,6 +49,8 @@
         */
 
         let text = "Hello Thank you good luck to you";
+        let text13 = "커피없이 못살아";
+
         document.write(text.charAt(16),"<br>");
 
         document.write(text.indexOf("you"),"<br>");
@@ -58,6 +60,33 @@
         document.write(text.lastIndexOf("you"),"<br>");
 
         document.write(text.lastIndexOf("you",25),"<br>");
+
+        document.write(text.match("luck"),"<br>");
+
+        document.write(text.search("you"),"<br>");
+
+        document.write(text.substr(21,4),"<br>");
+
+        document.write(text.substring(6,12),"<br>");
+
+        document.write(text.replace("you","me"),"<br>");
+
+        document.write(text.toLowerCase(),"<br>");
+
+        document.write(text.toUpperCase(),"<br>");
+
+        document.write(text.length,"<br>");
+
+        let setText = text.split(" ");
+        console.log(setText);
+
+        document.write(setText[3],"<br>");
+
+        document.write(text.charCodeAt(0),"<br>");
+
+        document.write(String.fromCharCode(72),"<br>");
+
+        document.write(text.concat(text13),"<br>");
 
 
     </script>

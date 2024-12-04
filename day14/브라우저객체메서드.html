@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>브라우저객체메서드</title>
+</head>
+<body>
+    <script>
+        /*
+        1. open("URL","새창이름","새창옵션") : URL 페이지를 새창으로 타나낸다.
+        
+        2. alert(data):경고창을 나타내고 메시지를 출력함 (사용자는 확인을 누를 수 있음)
+
+        3. prompt("질문","답변예시") : 질문과 답변으로 질의응답창을 만들어 사용자에게 값을 받음
+
+        4. confirm("질문내용") : 질문 내용으로 확인이나 취소 버튼을 누를 수 있음 / 확인 = true / 취소 = false
+
+        5. moveTo(x,y) : 지정한 새 창의 위치를 이동한다.
+
+        6. resizeTo(width,height) : 지정한 새 창의 크기를 변경
+
+        7. setInterval(function(){자바스크립트 코드;}일정시간 간격) : 지속적으로 일정한 시간 간격으로 함수를 호출하여 코드를 실행한다.
+
+        8. setTimeout(function(){자바스크립트코드;}일정시간간격) : 단 한 번 일정한 시간 간격으로 함수를 호출하여 코드를 실행한다.
+        */
+
+        //open
+        window.open("http://www.youtube.com/","유튜브","width=350, height=400, left=50, top=10");
+
+        //moveTo
+        let popup = window.open(
+            "http://www.naver.com/",
+            "네이버",
+            "width=350, height=400, left=50, top=300"
+        )
+        popup.moveTo(500,500);
+
+</script>
+</body>
+</html>
