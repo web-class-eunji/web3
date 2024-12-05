@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스크린객체</title>
+</head>
+<body>
+    <script>
+        /*
+            스크린객체
+            1. screen.width : 화면의 너비를 반환
+            2. screen.height : 화면의 높이를 반환
+            3. screen.availWidth : 작업표시줄을 제외한 너비를 반환
+            4. screen.availHeight : 작업표시줄을 제외한 높이를 반환
+            5. screen.colorDepth : 모니터가 표현 가능한 컬러깊이 (bit)를 반환
+        */
+
+        document.write(`화면의 너비는 ${screen.width}px 입니다 <br>`);
+        document.write(`화면의 높이는 ${screen.height}px 입니다 <br>`);
+        document.write(`화면의 작업표시줄을 뺀 너비는 ${screen.availWidth}px 입니다 <br>`);
+        document.write(`화면의 작업표시줄을 뺀 높이는 ${screen.availHeight}px 입니다 <br>`);
+        document.write(`화면의 컬러 깊이(비트)는 ${screen.colorDepth} 입니다 <br>`);
+    </script>
+</body>
+</html>
