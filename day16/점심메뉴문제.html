@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>점심메뉴문제</title>
+</head>
+<body>
+    <script>
+        /*
+        배열객체와 수학객체 사용
+        점심메뉴를 고민중인데 부대찌개,돈까스,치킨,초밥,파스타중에
+        랜덤으로 선택되는 프로그램을 만들어서 점심메뉴를 정해보자!
+        */
+
+        let menu = ["부대찌개","돈까스","치킨","초밥","파스타"];
+        let menuNum = Math.ceil(Math.random() * menu.length);
+
+        let result = menu[menuNum];
+        document.write(result);
+
+    </script>
+</body>
+</html>
